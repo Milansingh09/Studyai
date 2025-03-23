@@ -1,37 +1,31 @@
-import React, { useState, useEffect } from 'react';
-import { Header } from './components/Header';
-import { FeatureCard } from './components/FeatureCard';
-import { QuizModal } from './components/QuizModal';
-import { features } from './data/features';
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
-import { Button } from "@/components/ui/button";
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-
-import './styles/App.css';
+import React, { useState } from 'react';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Pricing from './components/Pricing';
+import Testimonials from './components/Testimonials';
+import Footer from './components/Footer';
 
 const App = () => {
-  const [darkMode, setDarkMode] = useState(false);
-  const [loading, setLoading] = useState(false);
-  const [showQuizModal, setShowQuizModal] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(false);
 
-  useEffect(() => {
-    if (darkMode) document.body.classList.add('dark-mode');
-    else document.body.classList.remove('dark-mode');
-  }, [darkMode]);
+    const toggleTheme = () => {
+        setIsDarkMode(!isDarkMode);
+        document.body.classList.toggle('dark', !isDarkMode);
+    };
 
-  return (
-    <div>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main>
-        <div className="features">
-          {features.map((feature, index) => (
-            <FeatureCard key={index} feature={feature} setLoading={setLoading} />
-          ))}
+    return (
+        <div className={`bg-gray-50 ${isDarkMode ? 'dark' : ''}`}>
+            <Header toggleTheme={toggleTheme} />
+            <main className="container mx-auto px-4 pt-24 pb-12">
+                <Hero />
+                <Features />
+                <Pricing />
+                <Testimonials />
+            </main>
+            <Footer />
         </div>
-      </main>
-      <QuizModal showQuizModal={showQuizModal} setShowQuizModal={setShowQuizModal} />
-    </div>
-  );
+    );
 };
 
 export default App;
