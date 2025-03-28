@@ -4,6 +4,7 @@ const featuresData = [
     {
         icon: "bi-file-pdf",
         title: "PDF Analyzer",
+        
         description: "Upload your study materials and get AI-generated insights, key topics, and predicted questions."
     },
     {
