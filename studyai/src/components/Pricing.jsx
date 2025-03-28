@@ -20,31 +20,56 @@ const Pricing = () => {
 
     return (
         <section style={{ padding: '48px 16px' }}>
-            <h2 style={{ fontSize: '24px', fontWeight: 'bold', textAlign: 'center', marginBottom: '24px' }}>Choose Your Plan</h2>
+            <h2 style={{ fontSize: '24px', fontWeight: 'bold', textAlign: 'center', marginBottom: '24px', color:'black' }}>Choose Your Plan</h2>
             <div style={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
+                
+                    
                 <div style={pricingCardStyle}>
                     <h3 style={{ fontSize: '20px', fontWeight: 'bold',color:'black' }}>Free</h3>
                     <p style={{ fontSize: '32px', fontWeight: 'bold', color:'black' }}>$0<span style={{ fontSize: '14px', color: '#A0AEC0' }}>/month</span></p>
-                    <ul style={{ listStyleType: 'none', padding: 0 , color:'black'}}>
-                        <li>Basic AI queries (10/day)</li>
-                        <li>5 practice tests/month</li>
-                        <li>100MB notes storage</li>
-                        <li>Web access only</li>
-                        <li style={{ color: '#E53E3E' }}>Advanced analytics</li>
-                        <li style={{ color: '#E53E3E' }}>PDF chat</li>
+                    <ul style={{ listStyleType: 'none', padding: 0 , color:'black',}}>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Basic AI queries (10/day)</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        5 practice tests/month</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        100MB notes storage</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Web access only</li>
+                        <li style={{ color: '#E53E3E',marginBottom: '5px',fontWeight: 'bold' }}>
+                        <img src="/assets/cross.png" alt="cross" style={{ width: '16px', marginRight: '5px' }} />
+                           Advanced analytics</li>
+                        <li style={{ color: '#E53E3E',marginBottom: '5px',fontWeight: 'bold' }}>
+                        <img src="/assets/cross.png" alt="cross" style={{ width: '16px', marginRight: '5px' }} />
+                        PDF chat</li>
                     </ul>
-                    <button style={{ padding: '12px 24px', borderRadius: '4px', border: 'none', backgroundColor: '#E2E8F0', cursor: 'pointer' }}>Get Started</button>
+                    <button style={{ padding: '12px 24px', borderRadius: '4px', border: 'none', backgroundColor: '#E2E8F0', cursor: 'pointer', color: 'black'}}>Get Started</button>
                 </div>
                 <div style={{ ...pricingCardStyle, backgroundColor: '#3182ce', color: '#ffffff' }}>
                     <h3 style={{ fontSize: '20px', fontWeight: 'bold' }}>Pro</h3>
                     <p style={{ fontSize: '32px', fontWeight: 'bold' }}>$15<span style={{ fontSize: '14px', color: '#A0AEC0' }}>/month</span></p>
                     <ul style={{ listStyleType: 'none', padding: 0, color:'black' }}>
-                        <li>Unlimited AI queries</li>
-                        <li>Unlimited practice tests</li>
-                        <li>5GB notes storage</li>
-                        <li>Web & mobile access</li>
-                        <li>Advanced analytics</li>
-                        <li>Full PDF chat & analysis</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Unlimited AI queries</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}><img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Unlimited practice tests</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        5GB notes storage</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Web & mobile access</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Advanced analytics</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Full PDF chat & analysis</li>
                     </ul>
                     <button style={{ padding: '12px 24px', borderRadius: '4px', border: 'none', backgroundColor: '#ffffff', color: '#3182CE', cursor: 'pointer' }}>Subscribe Now</button>
                 </div>
@@ -52,16 +77,29 @@ const Pricing = () => {
                     <h3 style={{ fontSize: '20px', fontWeight: 'bold',color:'black' }}>Team</h3>
                     <p style={{ fontSize: '32px', fontWeight: 'bold' , color:'black'}}>$49<span style={{ fontSize: '14px', color: '#A0AEC0' }}>/month</span></p>
                     <ul style={{ listStyleType: 'none', padding: 0, color:'black' }}>
-                        <li>All Pro features</li>
-                        <li>Up to 5 team members</li>
-                        <li>20GB shared storage</li>
-                        <li>Team collaboration tools</li>
-                        <li>Admin dashboard</li>
-                        <li>Priority support</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        All Pro features</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />Up to 5 team members</li>
+
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        20GB shared storage</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Team collaboration tools</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Admin dashboard</li>
+                        <li style={{ marginBottom: '5px',fontWeight: 'bold'}}>
+                        <img src="/assets/check.png" alt="check" style={{ width: '16px', marginRight: '5px' }} />
+                        Priority support</li>
                     </ul>
-                    <button style={{ padding: '12px 24px', borderRadius: '4px', border: 'none', backgroundColor: '#E2E8F0', cursor: 'pointer' }}>Contact Sales</button>
+                    <button style={{ padding: '12px 24px', borderRadius: '4px', border: 'none', backgroundColor: '#E2E8F0', cursor: 'pointer', color:'black' }}>Contact Sales</button>
                 </div>
-            </div>
+                </div>
+            
         </section>
     );
 };
